@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>object</title>
+  </head>
+  <body>
+    
+
+    <script>
+      const ball = {
+        name: 'basketball',
+        price: 1091
+      };
+
+      const socks = {
+        name: 'cotton socks',
+        price: 1090
+      };
+
+      const product1 = socks;
+
+      function comparePrice(product1, product2){
+        let result = '';
+       return console.log(result = product1.price > product2.price ? product1 : product2); 
+      }
+
+      function isSameProduct(product1, product2){
+        return console.log(result = product1 === product2 ? true : false); 
+      }
+
+      // console.log(ball); //8a
+
+      // console.log(ball.price + 500);//8b
+
+      // //8c
+      // ball['delivery-time'] = '3 days';
+      // console.log(ball);
+
+      // comparePrice(ball,socks); 8d
+      
+      // isSameProduct(product1, socks); 8e
+      // isSameProduct(product1, ball);
+      
+      //8f
+      console.log('HELLO WORLD'.toLowerCase());
+      //8g
+      console.log(' HELLO '.repeat(2));
+
+      
+    </script>
+  </body>
+</html>

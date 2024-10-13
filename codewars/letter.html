@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+function getCount(str) {
+  let letter = ['a', 'e', 'i', 'o', 'u'];
+  let count = 0;
+
+  for(let i = 0; i < str.length; i++){
+    switch(str[i]){
+      case 'a':
+      case 'e':
+      case 'i':
+      case 'o':
+      case 'u':
+        count++;
+      break;
+      case '':
+
+      break;
+    }    
+  }    
+  
+  console.log(count);
+}
+getCount('abracaadabra');
+  </script>
+</body>
+</html>
+
+
+
+<!-- for(let i = 0; i < str.length; i++){
+  for(let j = 0; j < str.length; j++){
+    if(str[i] === ' '){
+
+    }
+    if(str[i] === letter[j]){
+      count++;
+    } else{
+      break;
+    }
+  }
+}
+console.log(count); -->

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Function</title>
+	</head>
+	<body>
+    <script>
+      // function function1(){
+      //   console.log(2 + 2);
+      // }
+
+      // function1();
+
+      // function calculateTax(cost){
+      //   console.log(cost * 0.1);
+      // }
+
+      // calculateTax(2000);
+      // calculateTax(5000);
+
+      function greet(name){
+        return name !== undefined ? `Hello ${name}` : `Hello there`;
+      }
+      // console.log(greet('Nick'));
+      // console.log(greet('John'));
+      // console.log(greet());
+
+      function convertToFahrenheit(temperature){
+        return (temperature * 9 / 5) + 32;
+      } 
+
+      function convertToCelsius(temperature){
+        return (temperature - 32) * 5/9;
+      }
+      
+      function convertTemperature(temperature, unit){
+        if(unit === 'C'){
+          const result = convertToFahrenheit(temperature);
+          return `${result} F`
+        }else if(unit === 'F'){
+          const result = convertToCelsius(temperature);
+          return `${result} C`;
+        }
+      }
+      console.log(convertTemperature(25, 'C'));
+      console.log(convertTemperature(86, 'F'));
+    </script>
+	</body>
+</html>

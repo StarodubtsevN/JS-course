@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    
+    <button> hello </button>
+
+    <script>
+      // document.body.innerHTML = 'HI';
+      // console.log(document.title);
+
+      // console.log(document.body);
+      // console.log(typeof(document.body));
+
+      // console.log(document.body.innerHTML);
+
+      // document.body.innerHTML = 'Changed';
+
+    function phoneCall(min1, min2_10, min11, s) {
+    //coding and coding..
+    var min = 0;
+    
+    if(1<= min1 <=10 && 1<= min2_10 <=10 && 1<= min11 <=10 && 2 <= s<=100){
+      if(s >= 2){
+        s = s - min1;++min;
+        console.log('1: ' + s);
+      }else {
+        return min;
+      }  
+      
+      if(s >= 2){
+          for(let i = 0; i < s; i++){
+            s = s - min2_10; min++;
+            console.log('min: ' + min);
+            console.log('2: ' + s);
+            console.log(' ');
+          }
+      } else {
+        return min;
+      }
+        
+      if(s >= 2){
+        for(let i = 0; i < s; i++){
+          s = Math.floor(s/min11);min += min11;
+          console.log('min: ' + min);
+          console.log('11: ' + s);
+          console.log(' ');
+        }
+      }else {
+        return min;
+      }
+    } else{
+      return 0;
+    }
+    return Math.round(min);
+  }
+  console.log(phoneCall(10,1,2,22));
+
+    </script>
+  </body>
+</html>
