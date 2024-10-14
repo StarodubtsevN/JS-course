@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Document</title>
+  </head>
+  <body>
+
+    <button class="js-heads" 
+      onclick="
+        changeHeads();
+      ">heads</button>
+    <button class="js-tails"      
+      onclick="
+        changeTails();   
+      ">tails</button>
+    <p class="chose">You chose:</p>
+    <script>
+      const heads = document.querySelector('.js-heads');
+      const tails = document.querySelector('.js-tails');
+      const chose = document.querySelector('.chose');
+      function changeHeads(){
+        if (heads.innerHTML === 'heads') {
+          chose.innerHTML = 'You chose: heads';
+        } 
+      }  
+      function changeTails(){
+        if (tails.innerHTML === 'tails') {
+          chose.innerHTML = 'You chose: tails';
+        }
+      }
+    </script>
+  </body>
+</html>

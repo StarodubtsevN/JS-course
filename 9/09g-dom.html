@@ -21,9 +21,6 @@
     <p class="js-total-cost"></p>
     <script>
 
-
-      
-
       function handleCostKeydown(event){
         if(event.key === 'Enter'){
           calculateTotal();
@@ -36,7 +33,7 @@
         let cost = Number(inputElement.value);
 
         if(cost < 40) {
-          cost = cost + 10;
+          cost = ((cost * 100 + 1000)) / 100; // перевод в центы после в доллары, из-за особенностей языка 
         }
         document.querySelector('.js-total-cost')
           .innerHTML = `Total cost: $${cost}`;

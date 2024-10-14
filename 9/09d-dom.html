@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <input class="text-box" onkeydown="
+      enter(event);
+      ">
+    <button 
+    onclick="
+    nameIs();
+    ">Submit</button>
+
+    <p class="is-name"></p>
+    <script>
+      function enter () {
+        if (event.key === 'Enter') {
+          nameIs();
+        }
+      }
+      function nameIs () {
+        let text_box = document.querySelector('.text-box').value;
+        let name = document.querySelector('.is-name');
+        name.innerText = `Your name is ${text_box}`;
+      }
+
+    </script>
+  </body>
+</html>

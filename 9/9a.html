@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+
+    <button class="js-9a" onclick="
+      console.log(document.querySelector('.js-9a'));
+    ">9a</button>
+
+    <button class="js-9b" onclick="
+      changed9b();
+    ">9b</button>
+
+
+    <script>
+      function changed9b(){
+        const buttonElemet = document.querySelector('.js-9b');
+        if( buttonElemet.innerText === '9b'){
+          buttonElemet.innerHTML = '9b done';
+        } else{
+          buttonElemet.innerHTML = '9b';
+        }
+      }
+    </script>
+  </body>
+</html>
